@@ -27,7 +27,7 @@ def update_docker_compose(image_name):
     yaml_file.write(yaml.dump(data, default_flow_style=False))
 
 def main():
-  image_name = "containous/whoami"
+  image_name = "kudaliar032/gitops-docker-swarm"
 
   new_image = "%s:%s" % (image_name, get_latest_image(image_name))
   update_docker_compose(new_image)
