@@ -9,7 +9,7 @@ services:
         reservations:
           cpus: '0.125'
           memory: 256M
-    image: kudaliar032/gitops-docker-swarm:v1
+    image: kudaliar032/gitops-docker-swarm:v3
     ports:
     - 80
 version: '3.8'
