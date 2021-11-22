@@ -9,7 +9,7 @@ services:
         reservations:
           cpus: '0.125'
           memory: 256M
-    image: nginx
+    image: nginx:alpine
     ports:
     - 80
 version: '3.8'
