@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  whoami:
+    image: containous/whoami
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 1024M
+        reservations:
+          cpus: "0.125"
+          memory: 256M
+    ports:
+      - 80
+
